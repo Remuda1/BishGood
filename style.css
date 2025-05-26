@@ -14,7 +14,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: center; /* Center the content within the container */
     max-width: 400px;
     width: 90%;
 }
@@ -25,12 +25,15 @@ h1 {
 }
 
 .supervisor-img {
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 180px; /* Slightly reduced width */
+    height: auto; /* Maintain aspect ratio for a portrait feel */
+    border-radius: 10px; /* Less round for a more standard portrait */
+    object-fit: contain; /* Ensures the whole image is visible within the bounds */
     margin-bottom: 20px;
     border: 3px solid #0056b3;
+    display: block; /* Allows margin: 0 auto; to work for centering */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #goodButton {
@@ -42,6 +45,7 @@ h1 {
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add some space between the image and button */
 }
 
 #goodButton:hover {
